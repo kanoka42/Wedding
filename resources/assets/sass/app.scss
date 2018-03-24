@@ -1,0 +1,250 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Flamenco');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-color: #B2DBBF;
+  font-size: 16px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.topImage {
+  max-width: 1900px;
+  height: 1080px;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: -80%;
+}
+
+.rsvpButton {
+  width: 125px;
+  height: 50px;
+  margin-left: 43%;
+  margin-top: 3%;
+  background-color: #2BB4E7;
+  border: 1px solid #2BB4E7;
+  color: #ffffff;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.rsvpButton:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2BB4E7;
+  font-weight: 600;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  }
+
+.pageView {
+  height: 60vh;
+  width: 94%;
+  margin-left: 3%;
+  background-color: white;
+  position: relative;
+  margin-top: -6.9%;
+  border-bottom: solid grey 1px;
+}
+
+.celeTextHolder {
+}
+
+.celeText {
+  font-family: 'Flamenco', cursive;
+  text-align: center;
+  font-size: 60px;
+  margin: 3%;
+  color: #373D3F;
+}
+
+.bottom {
+  margin-top: -4.5%;
+}
+
+.inviteText {
+  color: #444444;
+  font-family: 'Maven Pro', cursive;
+  font-size: 18px;
+  margin-left: 25%;
+  max-width: 75%;
+}
+
+.closer {
+  margin: 0;
+  padding: 0;
+}
+
+.upper {
+  font-weight: 700;
+}
+
+.rightText {
+  margin-left: 50%;
+  margin-top: -11%;
+  max-width: 25%;
+}
+
+.map {
+  margin-left: 3%;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.secondView {
+  height: 40vh;
+  width: 94%;
+  margin-left: 3%;
+  margin-top: -.25%;
+  background-color: white;
+  position: relative;
+  border-bottom: solid grey 1px;
+}
+
+.regButton {
+  color: #2BB4E7;
+  width: 125px;
+  font-weight: 700;
+  height: 50px;
+  background-color: #ffffff;
+  border: 2px solid #2BB4E7;
+  margin: 1% 1% 1% 47%;
+}
+
+.regButton:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2BB4E7;
+  border: 2px solid #2BB4E7;
+}
+
+.accent {
+  height: 50vh;
+  background-color: #2BB4E7;
+}
+
+.regBox {
+  margin-left: 39%;
+  width: 400px;
+  height: 187px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.regButtonNew {
+  color: #2BB4E7;
+  width: 150px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 2px solid #2BB4E7;
+  margin-left: 10%;
+}
+
+.regButtonNew:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2BB4E7;
+  border: 2px solid #2BB4E7;
+}
+
+.regText {
+  color: #444444;
+  font-family: 'Maven Pro', cursive;
+  font-size: 18px;
+  margin-left: 30%;
+  max-width: 75%;
+}
+
+.thirdView {
+  height: 30vh;
+  width: 94%;
+  margin-left: 3%;
+  background-color: #0F2129;
+  position: relative;
+  color: #ffffff;
+}
+
+.contText {
+  padding-top: 3%;
+  font-family: "Maven Pro", cursive;
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.contButton {
+  color: #2BB4E7;
+  width: 150px;
+  height: 50px;
+  background-color: #0F2129;
+  border: 2px solid #2BB4E7;
+  margin-top: 1%;
+  margin-left: 46%;
+}
+
+.contButton:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2BB4E7;
+  border: 2px solid #2BB4E7;
+}
+
+
+//Modal Nonsense.
+
+.modal-custom {
+  width: 800px;
+  max-width: 100%;
+  height: 600px;
+  max-height: 100%;
+}
+
+.modal-custom-header {
+  width: 100%;
+  height: 100px;
+  background-color: #2BB4E7;
+}
+
+.modal-custom-title {
+  padding-top: 3%;
+  font-size: 22px;
+}
+
+
+.custom-form-control {
+  margin-top: 2%;
+  font-size: 16px;
+}
+
+.custom-form-checkbox {
+  width: 25px;
+  height: 25px;
+  max-width: 30px;
+}
+
