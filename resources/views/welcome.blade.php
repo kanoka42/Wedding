@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <title>The Amiott's</title>
 
     <!-- Bootstrap -->
@@ -21,7 +20,8 @@
 
 <body>
 <div class="topImage">
-    <img class="topImage" src="/img/artsy-vibes-277413-unsplash.jpg">
+    <img id="hiddenImage" class="topImage" src="/img/artsy-vibes-277413-unsplash.jpg"/>
+    <img id="topImage" src="/img/anne-edgar-119383-unsplash.jpg"/>
 
     <div class="container">
             <div>
@@ -38,26 +38,28 @@
         <p class="celeText">Please join us for a <br></p>
         <p class="celeText bottom">celebration!</p>
     </div>
-    <div class="inviteText col-sm">
+
+    <div class="inviteText">
         <p class="closer upper">DATE & TIME</p>
         May 27, 2018 at 6PM
         <br>
         <br>
         <p class="closer upper">LOCATION</p>
-        The Springs<br> 123 Main<br> Weatherford, TX 76040
+        The Springs<br> 454 Thompson Rd<br> Weatherford, TX 76040
     </div>
-
-    <div class="inviteText col-sm rightText">
+    <br>
+    <div class="inviteText rightText">
         <p class="closer upper">DETAILS</p>
         <p class="closer">
-            Come help us celebrate the marriage<br>
+            Come help us celebrate the marriage
             of Hunter Rae Williams and Destry Clay Amiott.
         </p>
     </div>
+
 </div>
 
 <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26868.546036661708!2d-97.82194906006475!3d32.67093154036171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8651fd494a03dc97%3A0x6f78f19bcf6e7106!2sTHE+SPRINGS+Event+Venue!5e0!3m2!1sen!2sus!4v1521523262211" width="1790" height="568" frameborder="0" style="border-bottom: solid grey 1px;" allowfullscreen></iframe>
+    <iframe class="mapDetail" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26868.546036661708!2d-97.82194906006475!3d32.67093154036171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8651fd494a03dc97%3A0x6f78f19bcf6e7106!2sTHE+SPRINGS+Event+Venue!5e0!3m2!1sen!2sus!4v1521523262211" style="border-bottom: solid grey 1px;" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div class="secondView">
@@ -66,7 +68,7 @@
         <p class="celeText">Gift Registry<br></p>
     </div>
     <div style="margin-top: -2.5%;">
-        <p class="inviteText">
+        <p class="inviteText regMax">
             If you would like to purchase a gift from our registry, please check our registry out on MyRegistry.com!
         </p>
     </div>
@@ -78,7 +80,7 @@
         </a>
     </div>
 </div>
-<div class="secondView accent">
+<div class="accentView accent">
     <br>
     <div>
         <p class="celeText" style="color: #ffffff;">RSVP</p>

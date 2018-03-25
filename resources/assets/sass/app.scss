@@ -1,4 +1,3 @@
-
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 @import url('https://fonts.googleapis.com/css?family=Flamenco');
@@ -8,6 +7,7 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
 
 body {
   background-color: #B2DBBF;
@@ -19,8 +19,14 @@ img {
 }
 
 .topImage {
-  max-width: 1900px;
-  height: 1080px;
+  width: 100%;
+  height: 100%;
+  margin-top: -7%;
+  background-size: contain;
+}
+
+#topImage {
+  display: none;
 }
 
 .raleway {
@@ -37,6 +43,7 @@ img {
   height: 50px;
   margin-left: 43%;
   margin-top: 3%;
+  opacity: 0.8;
   background-color: #2BB4E7;
   border: 1px solid #2BB4E7;
   color: #ffffff;
@@ -58,9 +65,10 @@ img {
   color: #ffffff;
   background-color: #2BB4E7;
   font-weight: 600;
+  opacity: 1;
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
-  }
+}
 
 .pageView {
   height: 60vh;
@@ -105,9 +113,9 @@ img {
 }
 
 .rightText {
-  margin-left: 50%;
-  margin-top: -11%;
-  max-width: 25%;
+  margin-left: 45%;
+  margin-top: -12.5%;
+  max-width: 20%;
 }
 
 .map {
@@ -116,7 +124,22 @@ img {
   padding: 0;
 }
 
+.mapDetail {
+  width: 1790px;
+  height: 568px;
+}
+
 .secondView {
+  height: 40vh;
+  width: 94%;
+  margin-left: 3%;
+  margin-top: -.25%;
+  background-color: white;
+  position: relative;
+  border-bottom: solid grey 1px;
+}
+
+.accentView {
   height: 40vh;
   width: 94%;
   margin-left: 3%;
@@ -248,3 +271,244 @@ img {
   max-width: 30px;
 }
 
+
+
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  };
+  .topImage {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+
+  #hiddenImage {
+    display: none;
+  }
+
+  #topImage {
+    display: block;
+  }
+
+  .raleway {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: -90%;
+  }
+
+  .rsvpButton {
+    width: 125px;
+    height: 50px;
+    margin-left: 33%;
+    margin-top: 3%;
+    background-color: #2BB4E7;
+    border: 1px solid #2BB4E7;
+    color: #ffffff;
+    letter-spacing: 1px;
+    vertical-align: middle;
+  }
+
+  .pageView {
+    height: 80vh;
+    width: 105%;
+    margin-left: -1%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    position: relative;
+    border-bottom: solid grey 1px;
+  }
+
+
+  .celeText {
+    font-family: 'Flamenco', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: #373D3F;
+  }
+
+  .bottom {
+    margin-top: -4.5%;
+  }
+
+  .rightText {
+    margin-left: 25%;
+    margin-top: 0;
+    max-width: 60%;
+  }
+
+  .inviteText {
+    color: #444444;
+    font-family: 'Maven Pro', cursive;
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .closer {
+  }
+
+
+  .map {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .mapDetail {
+    margin-left: -3%;
+    width: 105%;
+    height: 100vh;
+  }
+
+  .secondView {
+    height: 50vh;
+    width: 105%;
+    margin-left: -3%;
+    margin-top: -2%;
+    background-color: white;
+    position: relative;
+    border-bottom: solid grey 1px;
+  }
+
+  .accentView {
+    height: 50vh;
+    width: 105%;
+    margin-left: -3%;
+    position: relative;
+    background-color: #2BB4E7;
+    border-bottom: solid grey 1px;
+  }
+
+  .regMax {
+    max-width: 60%;
+  }
+
+  .regButton {
+    color: #2BB4E7;
+    width: 150px;
+    font-weight: 700;
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid #2BB4E7;
+    margin: 1% 1% 1% 33%;
+  }
+
+  .regBox {
+    width: 96%;
+    height: 187px;
+    margin-left: 2%;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+  .regButtonNew {
+    color: #2BB4E7;
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid #2BB4E7;
+  }
+
+  .regButtonNew:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #2BB4E7;
+    border: 2px solid #2BB4E7;
+  }
+
+  .regText {
+    color: #444444;
+    font-family: 'Maven Pro', cursive;
+    font-size: 18px;
+  }
+
+  .thirdView {
+    height: 40vh;
+    width: 103%;
+    margin-left: -3%;
+    background-color: #0F2129;
+    position: relative;
+    color: #ffffff;
+  }
+
+  .contText {
+    padding-top: 5%;
+    max-width: 60%;
+    margin-left: 20%;
+    font-family: "Maven Pro", cursive;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+
+  .contButton {
+    color: #2BB4E7;
+    width: 150px;
+    height: 50px;
+    background-color: #0F2129;
+    border: 2px solid #2BB4E7;
+    margin-top: 1%;
+    margin-left: 33%;
+  }
+
+
+  //Modal Nonsense.
+
+  .modal-custom {
+    width: 800px;
+    max-width: 100%;
+    height: 600px;
+    max-height: 100%;
+  }
+
+  .modal-custom-header {
+    width: 100%;
+    height: 100px;
+    background-color: #2BB4E7;
+  }
+
+  .modal-custom-title {
+    padding-top: 3%;
+    font-size: 22px;
+  }
+
+
+  .custom-form-control {
+    margin-top: 2%;
+    font-size: 16px;
+  }
+
+  .custom-form-checkbox {
+    width: 25px;
+    height: 25px;
+    max-width: 30px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}

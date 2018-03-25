@@ -28,7 +28,7 @@
 
     <div class="container">
             <div>
-                <h1 class="raleway">We made it!</h1>
+                <h1 class="raleway">You're invited!</h1>
                         <button id="rsvpButton" class="rsvpButton" data-toggle="modal" data-target="#modal">RSVP</button>
             </div>
     </div>
