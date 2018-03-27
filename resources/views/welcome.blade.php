@@ -26,7 +26,7 @@
     <div class="container">
             <div>
                 <h1 class="raleway">You're invited!</h1>
-                        <button id="rsvpButton" class="rsvpButton" data-toggle="modal" data-target="#modal">RSVP</button>
+                    <button id="rsvpButton" class="rsvpButton" data-toggle="modal" data-target="#modal">RSVP</button>
             </div>
     </div>
 </div>
@@ -41,7 +41,7 @@
 
     <div class="inviteText">
         <p class="closer upper">DATE & TIME</p>
-        May 27, 2018 at 6PM
+        May 27, 2018 at 5PM
         <br>
         <br>
         <p class="closer upper">LOCATION</p>
@@ -89,8 +89,8 @@
         <br>
         <p class="regText" style="margin-top: 10px;"><strong>Are you attending?</strong></p>
         <div class="row">
-            <button class="regButtonNew"><strong>YES</strong></button>
-            <button class="regButtonNew"><strong>NO</strong></button>
+            <button id="rsvpButton" data-toggle="modal" data-target="#accept"  class="regButtonNew"><strong>YES</strong></button>
+            <button id="rsvpButton" data-toggle="modal" data-target="#decline"  class="regButtonNew"><strong>NO</strong></button>
         </div>
     </div>
 </div>
@@ -98,7 +98,6 @@
     <p class="contText">
         This wedding is hosted by Hunter Williams and Destry Amiott.
     </p>
-    <button class="contButton">CONTACT US</button>
 </div>
 
 
@@ -147,5 +146,74 @@
 
     </div>
 </div>
+
+<!-- The modal, wrapped in an overlay -->
+<div class="modal fade" id="accept" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <form method="POST" role="form" action="/rsvp">
+
+            <div class="modal-content modal-custom">
+                <div class="modal-header modal-custom-header">
+                    <h3 class="modal-title modal-custom-title">Great, glad to hear it!</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Just some information we need to get first!</p>
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">First Name</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control custom-form-control" name="firstName" value="{{ old('firstName') }}">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Last Name</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control custom-form-control" name="lastName" value="{{ old('lastName') }}">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Bringing a dance partner?</label>
+                        <div class="col-md-6">
+                            <input type="checkbox" class="form-control custom-form-checkbox" name="plusOne" value="1">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<!-- The modal, wrapped in an overlay -->
+<div class="modal fade" id="decline" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content modal-custom">
+                <div class="modal-header modal-custom-header">
+                    <h3 class="modal-title modal-custom-title">Oh No...</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>We're sad you can't come, hopefully we can see you sometime in the future!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default close">Close</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
 </body>
 </html>

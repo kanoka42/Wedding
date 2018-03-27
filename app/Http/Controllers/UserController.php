@@ -20,6 +20,6 @@ class UserController extends Controller
             'lastName' => $lastname,
             'plusOne' => $plusone,
         ]);
-        return redirect('/rsvp')->with('name', "$firstname");
+        return view('rsvp', ['firstName' => $firstname]);
     }
 }
