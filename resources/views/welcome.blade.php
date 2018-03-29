@@ -195,7 +195,7 @@
 
 
 <!-- The modal, wrapped in an overlay -->
-<div class="modal fade" id="decline" role="dialog">
+<div class="modal fade" id="decline" role="dialog" style="margin-top: -20%;">
     <div class="modal-dialog">
         <!-- Modal content-->
             <div class="modal-content modal-custom">
